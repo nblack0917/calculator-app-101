@@ -65,7 +65,8 @@ const changeOperation = (chosenOperation) => {
     break;
     case "modulus": symbol = "%"
     break;
-  }document.getElementById("symbol").innerHTML = symbol
+  }
+  document.getElementById("symbol").innerHTML = symbol
   
   // Use your Chrome Inspector Tool > Console Tab to see the "operation" that's logged
   console.log(operation)
@@ -97,4 +98,7 @@ const equals = () => {
   }
 }
 
-const resetResults = () => {document.getElementById("result").innerHTML = null}
+const resetResults = () => {
+  document.getElementById("result").innerHTML = null;
+  document.getElementById("symbol").innerHTML = null
+}

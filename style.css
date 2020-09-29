@@ -4,14 +4,24 @@ body {
   height: 75%;
 }
 
+.background-container {
+  width: 340px;
+  background-image: url("linedPaper.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  box-shadow: 5px 5px 4px silver;
+}
+
 hr {
-  width: 350px;
-  border: 3px solid black;
+  width: 250px;
+  margin: 0;
+  margin-left: 10px;
+  border: 2px solid black;
 }
 
 .containter {
   display: flex;
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 350px;
   height: 300px;
 }
@@ -26,7 +36,7 @@ hr {
   display: flex;
   align-items: flex-end;
   width: 75px;
-  background-color: deeppink;
+  /* background-color: deeppink; */
   margin-right: 20px;
 }
 
@@ -34,12 +44,12 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: dimgray;
+  /* background-color: dimgray; */
   width: 75px;
   height: 75px;
   margin-bottom: 11px;
   font-size: 4em;
-  font-family: monospace;
+  font-family: cursive
 }
 
 .number-boxes {
@@ -47,7 +57,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: coral;
+  /* background-color: coral; */
   height: auto;
   margin-top: 50px;
 }
@@ -56,7 +66,20 @@ hr {
   width: 100px;
   height: 100px;
   font-size: 4em;
+  font-family: cursive;
   text-align: right;
+  border: none;
+  background: none;
+}
+
+#first-Number::placeholder, #second-Number::placeholder {
+  font-size: .26em;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 .operation-buttons {
@@ -64,7 +87,7 @@ hr {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: crimson;
+  /* background-color: crimson; */
   padding: 0 20px;
 }
 .operation, .equal-button, .reset-button {
@@ -75,26 +98,28 @@ hr {
   border: none;
   align-items: center;
   justify-content: center;
-  background-color: chartreuse;
+  background-color: gold;
   font-size: 2em;
   font-family: monospace;
 }
+
 
 .result-container {
   width: 350px;
   height: 75px;
   display: inline-flex;
   justify-content: flex-end;
-  background-color: gold;
+  /* background-color: gold; */
 }
 
 .equal-button, .reset-button {
   margin: 10px 20px;
-  background-color: darkgreen;
+
 }
 
 .equal-button {
   font-size: 3.25em;
+  background-color: lightgreen;
 }
 
 .reset-button {
@@ -105,6 +130,7 @@ hr {
   max-width 200px;
   font-size: 4em;
   text-align: center;
-  margin-right: 43px;
-  background-color: green;
+  margin-right: 33px;
+  /* background-color: green; */
+  font-family: cursive;
 }
