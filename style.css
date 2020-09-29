@@ -3,3 +3,108 @@ body {
   width: 50%;
   height: 75%;
 }
+
+hr {
+  width: 350px;
+  border: 3px solid black;
+}
+
+.containter {
+  display: flex;
+  background-color: aqua;
+  width: 350px;
+  height: 300px;
+}
+
+.math-area {
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.sub-container {
+  display: flex;
+  align-items: flex-end;
+  width: 75px;
+  background-color: deeppink;
+  margin-right: 20px;
+}
+
+#symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: dimgray;
+  width: 75px;
+  height: 75px;
+  margin-bottom: 11px;
+  font-size: 4em;
+  font-family: monospace;
+}
+
+.number-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: coral;
+  height: auto;
+  margin-top: 50px;
+}
+
+#first-Number, #second-Number {
+  width: 100px;
+  height: 100px;
+  font-size: 4em;
+  text-align: right;
+}
+
+.operation-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: crimson;
+  padding: 0 20px;
+}
+.operation, .equal-button, .reset-button {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  background-color: chartreuse;
+  font-size: 2em;
+  font-family: monospace;
+}
+
+.result-container {
+  width: 350px;
+  height: 75px;
+  display: inline-flex;
+  justify-content: flex-end;
+  background-color: gold;
+}
+
+.equal-button, .reset-button {
+  margin: 10px 20px;
+  background-color: darkgreen;
+}
+
+.equal-button {
+  font-size: 3.25em;
+}
+
+.reset-button {
+  background-color: lightblue
+}
+
+#result {
+  max-width 200px;
+  font-size: 4em;
+  text-align: center;
+  margin-right: 43px;
+  background-color: green;
+}
